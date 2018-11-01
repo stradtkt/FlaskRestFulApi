@@ -75,7 +75,7 @@ class Item(Resource):
                 self.update(updated_item)
             except:
                 return {"message": "An error occurred updating the item."}
-        return item
+        return updated_item
 
 class ItemList(Resource):
     def get(self):
